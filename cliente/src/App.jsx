@@ -16,6 +16,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import NotFound from './components/NotFound';
+import UserProfile from './components/UserProfile';
 
 // Componente principal de la aplicación
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Routes>
         <Route path="/registro" element={<Register />} />
         <Route path="/login" element={<Login onLogin={setUser} />} />
+        <Route path="/perfil" element={<UserProfile user={user} />} />
         <Route path="/about" element={<About />} />
         <Route
           path="/"
